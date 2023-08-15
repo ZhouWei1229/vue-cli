@@ -1,8 +1,10 @@
 <template>
   <div class="login-page">
+    <transition name="fade" mode="out-in">
     <div v-if="!isLoggedIn" class="login-form">
-      <h2 class="login-title">登入</h2>
+      <h2 class="login-title">歡迎登入</h2>
       <el-form ref="loginForm" :model="loginData" class="form-container">
+        <!-- 表單項目 -->
         <el-form-item label="使用者名稱" prop="username">
           <el-input
               v-model="loginData.username"
@@ -23,13 +25,14 @@
         </el-form-item>
       </el-form>
     </div>
-    <div v-if="isLoggedIn" class="welcome-section">
+    <div v-else class="welcome-section">
       <div class="user-profile">
         <div class="avatar"></div>
         <p class="welcome-text">歡迎回來，{{ username }}！</p>
         <el-button type="danger" @click="showLogoutDialog">登出</el-button>
       </div>
     </div>
+    </transition>
     <el-dialog v-if="showLogout" v-model="showLogout" title="登出確認" width="30%">
       <p>您確定要登出嗎？</p>
       <div class="dialog-footer">
@@ -38,6 +41,7 @@
       </div>
     </el-dialog>
   </div>
+  <!-- 步驟說明 -->
   <p>
     <span class="step">1. 登入表單區域：</span>
     <span class="step-desc">若您尚未登入，將呈現登入表單，要求您輸入使用者名稱和密碼。點擊「登入」按鈕後，將進行模擬的登入檢查。如果使用者名稱和密碼相符，您將被認定為已登入，並展示歡迎畫面。</span>
@@ -117,8 +121,9 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
-  background-color: #f3d0c1; /* Warm background color */
+  min-height: 55vh;
+  background: linear-gradient(135deg, #f7d8b1 0%, #f3a683 100%); /* 漸層底效果 */
+  border-radius: 16px;
 }
 
 .login-form {
@@ -200,6 +205,14 @@ export default {
   display: block;
   margin-top: 8px;
   line-height: 1.5;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: transform 0.8s, opacity 0.8s; /* 过渡动画持续时间 */
+}
+.fade-enter, .fade-leave-to {
+  transform: translateY(20px); /* 初始位置和最终位置 */
+  opacity: 0;
 }
 
 </style>
