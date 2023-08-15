@@ -31,11 +31,6 @@ client-api-get-success
 ![Image Description](src/assets/read-image/clientApiGet-success.png)
 
 
-### Item Function (view)
-#### item can create && delete
-![Image Description](src/assets/read-image/item-create-delete.png)
-
-
 ### Login Function (view)
 #### login
 ![Image Description](src/assets/read-image/login.png)
