@@ -1,0 +1,17 @@
+
+html,
+body {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+
+.el-footer,
+.el-header{
+  padding:0px !important;
+}
+
+.el-form-item__label {
+  width: 90px;
+  justify-content: left;
+}
