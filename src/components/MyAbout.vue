@@ -6,10 +6,10 @@
       <p class="fade-in-up">Our mission is to deliver excellence and exceed expectations in everything we do.</p>
 
       <div class="interaction">
-        <el-button class="like-button" :class="{ liked: isLiked }" @click="toggleLike" size="medium" type="success">
+        <el-button class="like-button" :class="{ liked: isLiked }" @click="toggleLike" type="danger" link>
           <el-icon><Sunny/></el-icon>
         </el-button>
-        <el-button class="comment-button" :class="{ active: showComment }" @click="toggleComment" size="medium" type="info">
+        <el-button class="comment-button" :class="{ active: showComment }" @click="toggleComment" type="danger" link>
           <el-icon><ChatDotRound /></el-icon>
         </el-button>
       </div>
