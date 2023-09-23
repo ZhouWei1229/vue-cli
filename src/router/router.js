@@ -4,6 +4,7 @@ import MyAbout from '@/components/MyAbout.vue';
 import MyContact from '@/components/MyContact.vue';
 import LoginFunction from "@/components/LoginFunction.vue";
 import ApiFunction from "@/components/ApiFunction.vue";
+import Gamer from "@/components/Gamer.vue";
 
 const routes = [
     {path: '/', component: MyHome},
@@ -11,6 +12,7 @@ const routes = [
     {path: '/contact', component: MyContact},
     {path: '/loginFunction', component: LoginFunction},
     {path: '/apiFunction', component: ApiFunction},
+    {path: '/gamer', component: Gamer},
 ];
 
 const router = createRouter({
