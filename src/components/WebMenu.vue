@@ -6,6 +6,7 @@
       <li><router-link to="/contact" class="menu-link">Contact</router-link></li>
       <li><router-link to="/loginFunction" class="menu-link">Login Function</router-link></li>
       <li><router-link to="/apiFunction" class="menu-link">API Function</router-link></li>
+      <li><router-link to="/gamer" class="menu-link">Gamer</router-link></li>
     </ul>
   </nav>
 </template>
