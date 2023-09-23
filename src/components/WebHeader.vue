@@ -2,7 +2,7 @@
   <header class="web-header">
     <div class="header-content">
       <div class="logo">
-<!--        <img src="/assets/logo.png" alt="Company Logo">-->
+        <!--        <img src="/assets/logo.png" alt="Company Logo">-->
       </div>
       <div class="nav" v-if="isDesktop">
         <router-link to="/" class="nav-link">Home</router-link>
@@ -10,14 +10,14 @@
         <router-link to="/contact" class="nav-link">Contact</router-link>
         <router-link to="/loginFunction" class="nav-link">Login Function</router-link>
         <router-link to="/apiFunction" class="nav-link">API Function</router-link>
-        <router-link to="/gamer" class="nav-link">Gamer</router-link>
+        <!--        <router-link to="/gamer" class="nav-link">Gamer</router-link>-->
       </div>
     </div>
   </header>
 </template>
 
 <script>
-import { ref, onMounted } from 'vue';
+import {ref, onMounted} from 'vue';
 
 export default {
   name: 'WebHeader',
@@ -33,7 +33,7 @@ export default {
       window.addEventListener('resize', checkScreenSize);
     });
 
-    return { isDesktop };
+    return {isDesktop};
   }
 }
 </script>
