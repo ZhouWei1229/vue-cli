@@ -16,7 +16,6 @@
       <li>
         <router-link to="/apiFunction" class="menu-link">API Function</router-link>
       </li>
-      <!--      <li><router-link to="/gamer" class="menu-link">Gamer</router-link></li>-->
     </ul>
   </nav>
 </template>

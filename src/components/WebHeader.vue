@@ -10,7 +10,6 @@
         <router-link to="/contact" class="nav-link">Contact</router-link>
         <router-link to="/loginFunction" class="nav-link">Login Function</router-link>
         <router-link to="/apiFunction" class="nav-link">API Function</router-link>
-        <!--        <router-link to="/gamer" class="nav-link">Gamer</router-link>-->
       </div>
     </div>
   </header>
